@@ -183,7 +183,7 @@ def ImportAndMineData(onto_path, data_path, QUERY, free_search):
   print("data colected")
   return(df_processed)
 
-  def _calculateResult(search_query, data_frame):
+def _calculateResult(search_query, data_frame):
         """Evaluate expressions."""
         # Functions to split and search query
         f_split_query = lambda query, separator : query.split(separator) # f_split_query(query = key1ANDkey2ORkey3) --> [[Key1,key2],[key3]]
