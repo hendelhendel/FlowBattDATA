@@ -59,7 +59,7 @@ def ImportAndMineData(onto_path, data_path, QUERY, free_search):
 
   # Check if entered query contains ontology classes. 
     # If free search is on, ontology classes will be append, otherwise a warning wil be given. 
-  class_select = check_query(QUERY, class_select)
+  class_select = check_query(QUERY, class_select, free_search)
 
   #import data
   df_raw = pd.read_csv(data_path) 
