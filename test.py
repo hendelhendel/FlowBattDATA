@@ -7,6 +7,20 @@ Original file is located at
     https://colab.research.google.com/drive/1O5lc4w_sFK-Hf59TWdfFhomAqJeukDH5
 """
 
+# Data
+import numpy as np 
+import pandas as pd 
+import time 
+import csv
+from collections import Counter 
+import matplotlib.pyplot as plt  
+# Ontology
+!pip install owlready2 
+from owlready2 import * 
+import re  # To separate words based on capital letters in onto classes & to split search queries
+import sys
+print("Import done")
+
 def check_query(Enter_query, Enter_OntologyClasses, free_search):
   print("...Loading query...")
   parts = Enter_query.replace('| AND |','| OR |').split('| OR |')
