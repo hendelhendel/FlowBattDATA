@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1O5lc4w_sFK-Hf59TWdfFhomAqJeukDH5
 """
 
-def check_query(Enter_query, Enter_OntologyClasses):
+def check_query(Enter_query, Enter_OntologyClasses, free_search):
   print("...Loading query...")
   parts = Enter_query.replace('| AND |','| OR |').split('| OR |')
   for part in parts:
