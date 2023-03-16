@@ -21,7 +21,7 @@ def check_query(Enter_query, Enter_OntologyClasses, free_search):
   print("..Query loaded...Start searching...")
   return(Enter_OntologyClasses)
 
-def ImportAndMineData(onto_path, data_path, QUERY):
+def ImportAndMineData(onto_path, data_path, QUERY, free_search):
   # Import ontology
   try:
       onto = get_ontology(onto_path[0]).load()
@@ -261,3 +261,4 @@ def ImportAndMineData(onto_path, data_path, QUERY):
         #print(answer)
         # self._view.setDisplayText(result) # disabled to see input query on display
         #self._view.setOutputScreenText(result.split("\n"))
+
