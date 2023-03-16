@@ -15,7 +15,7 @@ import csv
 from collections import Counter 
 import matplotlib.pyplot as plt  
 # Ontology
-!pip install owlready2 
+#!pip install owlready2 
 from owlready2 import * 
 import re  # To separate words based on capital letters in onto classes & to split search queries
 import sys
