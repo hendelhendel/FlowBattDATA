@@ -207,6 +207,7 @@ def _calculateResult(search_query, data_frame):
         
         answer = 'Search Results: '# Create string to store result
 #        count = [None] * len(parts) # storage to count number of times an onto class is found
+
         for parts in que:  #Searches for articles in wich all ontology classes of 'parts' are found.
             L_parts = []
             n = -1
@@ -232,7 +233,7 @@ def _calculateResult(search_query, data_frame):
         
         # !NOTE: This loop can not be included in the previous loop!
         for parts in que:
-            dictio_searchResult[parts] = []
+#            dictio_searchResult[parts] = []
             for row in dictio[str(parts)]:
                 answer = answer + "\n   " + str(parts) + " found in the abstract of DOI:" + str(df["DOI"][row]) + "  in the sentence(s):"
                 dictio_searchResult[parts] = dictio_searchResult[parts].append(df["DOI"][row])
