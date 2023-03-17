@@ -272,7 +272,7 @@ def _calculateResult(search_query, data_frame):
                     
         # Show anwser 
         result = answer
-        return(answer, dictio)
+        return(answer)
         #print(answer)
         # self._view.setDisplayText(result) # disabled to see input query on display
         #self._view.setOutputScreenText(result.split("\n"))
