@@ -236,7 +236,7 @@ def _calculateResult(search_query, data_frame):
 #            dictio_searchResult[parts] = []
             for row in dictio[str(parts)]:
                 answer = answer + "\n   " + str(parts) + " found in the abstract of DOI:" + str(df["DOI"][row]) + "  in the sentence(s):"
-                dictio_searchResult[parts] = dictio_searchResult[parts].append(df["DOI"][row])
+#                dictio_searchResult[parts] = dictio_searchResult[parts].append(df["DOI"][row])
                 for onto in parts:
                     answer = answer + "\n           " + str(df[onto][row])
         
